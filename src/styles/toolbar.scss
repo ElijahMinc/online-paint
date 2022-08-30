@@ -1,0 +1,127 @@
+// @import "./variables";
+.toolbar-nav {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.tool {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+
+  border: 1px solid rgba(0, 0, 0, 0.4);
+
+  transition: border 0.3s inline;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    border: 1px solid rgba(0, 0, 0, 0.7);
+  }
+
+  &#brush {
+    background: url("../assets/img/brush.png") no-repeat center center;
+  }
+  &#rect {
+    background: url("../assets/img/rect.png") no-repeat center center;
+  }
+  &#circle {
+    background: url("../assets/img/circle.png") no-repeat center center;
+  }
+  &#eraser {
+    background: url("../assets/img/eraser.png") no-repeat center center;
+  }
+  &#line {
+    background: url("../assets/img/line.png") no-repeat center center;
+  }
+  &#undo {
+    background: url("../assets/img/undo.png") no-repeat center center;
+  }
+  &#redo {
+    background: url("../assets/img/redo.png") no-repeat center center;
+  }
+  &#save {
+    background: url("../assets/img/save.png") no-repeat center center;
+  }
+
+  #color {
+    cursor: pointer;
+    width: 80%;
+    height: 80%;
+  }
+}
+
+// #toolbar{
+//    height: $toolbar-height;
+//    background-color: white;
+
+//    padding: 0 15px;
+
+//    display: flex;
+//    align-items: center;
+//    justify-content: space-between;
+
+//    position: absolute;
+//    width: 100%;
+//    box-shadow: 0 4px 5px gray;
+//    z-index: 999;
+
+//    &__btn{
+//       height: 25px;
+//       width: 25px;
+
+//       border: none;
+//       outline: none;
+//       cursor: pointer;
+
+//       background-size: cover;
+//    }
+//    .brush{
+//       background: url("../assets/img/brush.png") no-repeat center center ;
+//    }
+//    .rect{
+//       background: url("../assets/img/rect.png") no-repeat center center ;
+//    }
+//    .circle{
+//       background: url("../assets/img/circle.png") no-repeat center center ;
+//    }
+//    .eraser{
+//       background: url("../assets/img/eraser.png") no-repeat center center ;
+//    }
+//    .line{
+//       background: url("../assets/img/line.png") no-repeat center center ;
+//    }
+//    .undo{
+//       background: url("../assets/img/undo.png") no-repeat center center ;
+//    }
+//    .redo{
+//       background: url("../assets/img/redo.png") no-repeat center center ;
+//    }
+//    .save{
+//       background: url("../assets/img/save.png") no-repeat center center ;
+//    }
+
+//    &__left,
+//    &__right{
+//       display: flex;
+//       gap: 10px;
+//    }
+// }
+
+// .setting-bar{
+//    height: $toolbar-height;
+//    background-color: white;
+
+//    display: flex;
+//    align-items: center;
+//    justify-content: center;
+
+//    position: absolute;
+//    width: 100%;
+//    box-shadow: 0 4px 5px gray;
+
+//    top: $toolbar-height;
+// }

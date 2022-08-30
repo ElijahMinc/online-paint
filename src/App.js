@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { Canvas } from "./components/Canvas/Canvas"
+import { SettingBar } from "./components/SettingBar/SettingBar"
+import { Toolbar } from "./components/Toolbar/Toolbar"
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom"
+
+import "./styles/app.scss"
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <div className="app">
+        <Switch>
+          <Route path="/:id">
+            <Toolbar />
+            <SettingBar />
+            <Canvas />
+          </Route>
+          <Redirect to={`f${(+new Date()).toString(16)}`} />
+        </Switch>
+      </div>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
